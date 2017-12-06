@@ -1,10 +1,5 @@
 var questions = [
     {
-        id: 0,
-        text: "Hello",
-        responses: []
-    },
-    {
         id: 1,
         text: "Quelle relation avez-vous avec l’argent ?",
         responses: [
@@ -17,7 +12,8 @@ var questions = [
             {
                 id: 1,
                 text: 'Vous adoreriez avoir un sac Louis Vuitton et une Rolex',
-                impactPlus: ['trump', 'macron']
+                impactPlus: ['trump', 'macron'],
+                impactMoins: []
             }
         ]
     },
@@ -26,16 +22,22 @@ var questions = [
         text: "Plutôt",
         responses: [
             {
+                id: 0,
                 text: 'Blond(e) ?',
-                impactPlus: ['merkel']
+                impactPlus: ['merkel'],
+                impactMoins: []
             },
             {
+                id: 1,
                 text: 'Brun(e) ?',
-                impactPlus: ['macron']
+                impactPlus: ['macron'],
+                impactMoins: []
             },
             {
+                id: 2,
                 text: 'Peroxydé ?',
-                impactPlus: ['trump']
+                impactPlus: ['trump'],
+                impactMoins: []
             }
         ]
     },

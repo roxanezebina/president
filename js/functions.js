@@ -3,23 +3,27 @@ window.onload = function() {
         el: '#app',
         data: {
             questions: questions,
-            questionIndex: 1,
-            current_question: questions[1],
-            question: questions[1],
-            responses: questions[1].responses,
+            questionIndex: 0,
+            current_question: questions[0],
+            question: questions[0],
+            responses: questions[0].responses,
 
         },
         methods: {
             // Go to next question
             next: function() {
+
+                console.log("id:" + this.questionIndex);
+
                 var current_question = questions[this.questionIndex];
 
                 var user_response = document.querySelector('.response_radio:checked').value;
 
-                console.log(user_response);
+                console.log("user_response" + user_response);
 
-                var impactPlus = current_question.responses[user_response].impactPlus;
-                var impactMoins = current_question.responses[user_response].impactMoins;
+
+                impactPlus = current_question.responses[user_response].impactPlus;
+                impactMoins = current_question.responses[user_response].impactMoins;
 
                 console.log("impactPlus:" + impactPlus + "; impactMoins:" + impactMoins);
 
@@ -27,15 +31,12 @@ window.onload = function() {
                     switch (impactPlus[i]) {
                         case "macron":
                             macron = macron + 1;
-                            console.log("macron:" + macron);
                             break;
                         case "trump":
                             trump = trump + 1;
-                            console.log("trump:" + trump);
                             break;
                         case "holland":
                             holland = holland + 1;
-                            console.log("holland:" + holland);
                             break;
                         default:
 
@@ -46,26 +47,36 @@ window.onload = function() {
                     switch (impactMoins[k]) {
                         case "macron":
                             macron = macron - 1;
-                            console.log("macron:" + macron);
                             break;
                         case "trump":
                             trump = trump - 1;
-                            console.log("trump:" + trump);
                             break;
                         case "holland":
                             holland = holland - 1;
-                            console.log("holland:" + holland);
                             break;
                         default:
 
                     }
                 }
 
-                this.questionIndex++;
-                next_question = questions[this.questionIndex];
-                next_responses = questions[this.questionIndex].responses;
-                this.question = next_question;
-                this.responses = next_responses;
+                if (this.questionIndex >= questions.length - 1) {
+                    console.log("macron:" + macron + " trump:" + trump + " holland:" + holland);
+
+                    var presidents = [macron, trump, holland],
+                        maxpresident = Math.max.apply(Math.max, presidents),
+                        presidentsNames = ["macron", "trump", "holland"],
+                        bestPresident = presidentsNames[presidents.indexOf(maxpresident)];
+                        console.log(bestPresident);
+                        alert("macron:" + macron + " trump:" + trump + " holland:" + holland + "\n" +
+                        "Votre président chéri : " + bestPresident);
+                } else {
+
+                    this.questionIndex++;
+                    next_question = questions[this.questionIndex];
+                    next_responses = questions[this.questionIndex].responses;
+                    this.question = next_question;
+                    this.responses = next_responses;
+                }
 
             },
 
