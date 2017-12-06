@@ -14,6 +14,7 @@
         <div class="large-12 columns">
             <h1>Quel président te convient le mieux ?</h1>
             <div class="callout">
+                <h2>{{ question.text }}</h2>
                 <ul>
                     <li v-for="response in responses" v-bind:for="response.id">
                         <label v-bind:for="response.id">
