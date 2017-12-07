@@ -6,7 +6,7 @@ var questions = [
             {
                 id: 0,
                 text: 'Vous détestez les riches : au bûcher !',
-                impactPlus: ['holland'],
+                impactPlus: ['hollande'],
                 impactMoins: ['macron']
             },
             {
