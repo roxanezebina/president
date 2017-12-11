@@ -6,7 +6,7 @@ var questions = [
             {
                 id: 0,
                 text: 'Vous détestez les riches : au bûcher !',
-                impactPlus: ['holland'],
+                impactPlus: ['hollande'],
                 impactMoins: ['macron', 'trump']
             },
             {
@@ -25,19 +25,19 @@ var questions = [
                 id: 0,
                 text: 'Blond(e) ?',
                 impactPlus: ['merkel'],
-                impactMoins: ['macron', 'holland', 'trump', 'sarkozy']
+                impactMoins: ['macron', 'hollande', 'trump', 'sarkozy']
             },
             {
                 id: 1,
                 text: 'Brun(e) ?',
-                impactPlus: ['macron', 'sarkozy', 'holland'],
+                impactPlus: ['macron', 'sarkozy', 'hollande'],
                 impactMoins: ['merkel', 'trump']
             },
             {
                 id: 2,
                 text: 'Peroxydé ?',
                 impactPlus: ['trump'],
-                impactMoins: ['merkel', 'macron', 'holland', 'sarkozy']
+                impactMoins: ['merkel', 'macron', 'hollande', 'sarkozy']
             }
         ]
     },
@@ -54,7 +54,7 @@ var questions = [
             {
                 id: 1,
                 text: 'Ecole de droit',
-                impactPlus: ['holland', 'sarkozy'],
+                impactPlus: ['hollande', 'sarkozy'],
                 impactMoins: []
             },
             {
@@ -90,7 +90,7 @@ var questions = [
             {
                 id: 3,
                 text: 'We are proud of you because you can be do what we want to do',
-                impactPlus: ['holland'],
+                impactPlus: ['hollande'],
                 impactMoins: ['trump']
             }
         ]
@@ -102,20 +102,20 @@ var questions = [
             {
                 id: 0,
                 text: 'En France',
-                impactPlus: ['macron', 'sarkozy', 'holland'],
+                impactPlus: ['macron', 'sarkozy', 'hollande'],
                 impactMoins: ['merkel', 'trump']
             },
             {
                 id: 1,
                 text: 'Au USA',
                 impactPlus: ['trump'],
-                impactMoins: ['macron', 'sarkozy', 'holland', 'trump']
+                impactMoins: ['macron', 'sarkozy', 'hollande', 'trump']
             },
             {
                 id: 2,
                 text: 'En Allemagne',
                 impactPlus: ['merkel'],
-                impactMoins: ['macron', 'sarkozy', 'holland', 'trump']
+                impactMoins: ['macron', 'sarkozy', 'hollande', 'trump']
             }
         ]
     },
@@ -132,7 +132,7 @@ var questions = [
             {
                 id: 1,
                 text: 'entre 10 ans et 25 ans',
-                impactPlus: ['sarkozy', 'holland'],
+                impactPlus: ['sarkozy', 'hollande'],
                 impactMoins: []
             },
             {
@@ -163,12 +163,12 @@ var questions = [
                 id: 2,
                 text: 'Golf',
                 impactPlus: ['trump'],
-                impactMoins: ['merkel', 'holland', 'macron', 'sarkozy']
+                impactMoins: ['merkel', 'hollande', 'macron', 'sarkozy']
             },
             {
                 id: 3,
                 text: 'Foot',
-                impactPlus: ['holland'],
+                impactPlus: ['hollande'],
                 impactMoins: ['merkel', 'trump']
             }
         ]
@@ -187,12 +187,12 @@ var questions = [
                 id: 1,
                 text: 'effrayant(e)',
                 impactPlus: ['trump'],
-                impactMoins: ['sarkozy', 'macron', 'merkel', 'holland']
+                impactMoins: ['sarkozy', 'macron', 'merkel', 'hollande']
             },
             {
                 id: 3,
                 text: 'naturel(e)',
-                impactPlus: ['merkel', 'holland'],
+                impactPlus: ['merkel', 'hollande'],
                 impactMoins: ['trump']
             }
         ]
@@ -205,18 +205,18 @@ var questions = [
                 id: 0,
                 text: 'Bière',
                 impactPlus: ['merkel'],
-                impactMoins: ['macron', 'sarkozy', 'holland', 'trump']
+                impactMoins: ['macron', 'sarkozy', 'hollande', 'trump']
             },
             {
                 id: 1,
                 text: 'Whisky',
                 impactPlus: ['trump', 'sarkozy'],
-                impactMoins: ['macron', 'merkel', 'holland']
+                impactMoins: ['macron', 'merkel', 'hollande']
             },
             {
                 id: 3,
                 text: 'Vin',
-                impactPlus: ['macron', 'holland', 'sarkozy'],
+                impactPlus: ['macron', 'hollande', 'sarkozy'],
                 impactMoins: ['merkel', 'trump']
             }
         ]
@@ -229,12 +229,12 @@ var questions = [
                 id: 0,
                 text: 'Aucun enfant',
                 impactPlus: ['merkel', 'macron'],
-                impactMoins: ['sarkozy', 'holland', 'trump']
+                impactMoins: ['sarkozy', 'hollande', 'trump']
             },
             {
                 id: 1,
                 text: 'Famille moyenne',
-                impactPlus: ['holland', 'sarkozy'],
+                impactPlus: ['hollande', 'sarkozy'],
                 impactMoins: ['macron', 'merkel']
             },
             {

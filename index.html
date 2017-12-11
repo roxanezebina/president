@@ -16,7 +16,7 @@
             <div class="callout">
                 <h2>{{ question.text }}</h2>
                 <ul>
-                    <li v-for="response in responses" v-bind:for="response.id">
+                    <li v-for="response in responses">
                         <label v-bind:for="response.id">
                             <input v-on:click="next" class="response_radio" type="radio"
                             v-bind:value="response.id"
@@ -35,7 +35,7 @@
 <!-- SCRIPTS -->
 <script> // Globals for each presidents's score
 var trump = 0;
-var holland = 0;
+var hollande = 0;
 var macron = 0;
 var merkel = 0;
 var sarkozy = 0;

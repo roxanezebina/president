@@ -16,10 +16,10 @@ window.onload = function() {
                 console.log("id:" + this.questionIndex);
 
                 var current_question = questions[this.questionIndex];
-
+                console.log(current_question);
                 var user_response = document.querySelector('.response_radio:checked').value;
 
-                console.log("user_response" + user_response);
+                console.log("reponse:" + user_response);
 
 
                 impactPlus = current_question.responses[user_response].impactPlus;
@@ -35,8 +35,8 @@ window.onload = function() {
                         case "trump":
                             trump = trump + 1;
                             break;
-                        case "holland":
-                            holland = holland + 1;
+                        case "hollande":
+                            hollande = hollande + 1;
                             break;
                         default:
 
@@ -51,8 +51,8 @@ window.onload = function() {
                         case "trump":
                             trump = trump - 1;
                             break;
-                        case "holland":
-                            holland = holland - 1;
+                        case "hollande":
+                            hollande = hollande - 1;
                             break;
                         default:
 
@@ -60,25 +60,26 @@ window.onload = function() {
                 }
 
                 if (this.questionIndex >= questions.length - 1) {
-                    console.log("macron:" + macron + " trump:" + trump + " holland:" + holland);
+                    console.log("macron:" + macron + " trump:" + trump + " hollande:" + hollande + " merkel:" + merkel + " sarkozy:" + sarkozy);
 
-                    var presidents = [macron, trump, holland],
+                    var presidents = [macron, trump, hollande, merkel, sarkozy],
                         maxpresident = Math.max.apply(Math.max, presidents),
-                        presidentsNames = ["macron", "trump", "holland"],
+                        presidentsNames = ["macron", "trump", "hollande", "merkel", "sarkozy"],
                         bestPresident = presidentsNames[presidents.indexOf(maxpresident)];
                         console.log(bestPresident);
-                        alert("macron:" + macron + " trump:" + trump + " holland:" + holland + "\n" +
+                        alert("macron:" + macron + " trump:" + trump + " hollande:" + hollande + " merkel:" + merkel + " sarkozy:" + sarkozy + "\n" +
                         "Votre président chéri : " + bestPresident);
                 } else {
-
                     this.questionIndex++;
                     next_question = questions[this.questionIndex];
                     next_responses = questions[this.questionIndex].responses;
+                    console.log(next_question.text);
                     this.question = next_question;
                     this.responses = next_responses;
                 }
 
             },
+
 
         }
     });
