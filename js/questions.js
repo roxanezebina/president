@@ -1,6 +1,6 @@
 var questions = [
     {
-        id: 1,
+        id: 0,
         text: "Quelle relation avez-vous avec l’argent ?",
         responses: [
             {
@@ -18,7 +18,7 @@ var questions = [
         ]
     },
     {
-        id: 2,
+        id: 1,
         text: "Plutôt",
         responses: [
             {
@@ -42,7 +42,7 @@ var questions = [
         ]
     },
     {
-        id: 3,
+        id: 2,
         text: "Quelle école a le plus de style ?",
         responses: [
             {
@@ -66,67 +66,37 @@ var questions = [
         ]
     },
     {
+        id: 3,
+        text: "Quelle phrase vous correspondrait le plus :",
+        responses: [
+            {
+                id: 0,
+                text: 'La population qui vieillit, vieillit de plus en plus vieux.',
+                impactPlus: ['sarkozy'],
+                impactMoins: []
+            },
+            {
+                id: 1,
+                text: 'L\'espionnage n\'est jamais acceptable entre amis',
+                impactPlus: ['merkel'],
+                impactMoins: ['sarkozy', 'trump']
+            },
+            {
+                id: 2,
+                text: 'Je ne céderais rien aux fainéants',
+                impactPlus: ['macron'],
+                impactMoins: ['trump']
+            },
+            {
+                id: 3,
+                text: 'We are proud of you because you can be do what we want to do',
+                impactPlus: ['holland'],
+                impactMoins: ['trump']
+            }
+        ]
+    },
+    {
         id: 4,
-        text: "Quelle phrase vous correspondrait le plus :",
-        responses: [
-            {
-                id: 0,
-                text: 'La population qui vieillit, vieillit de plus en plus vieux.',
-                impactPlus: ['sarkozy'],
-                impactMoins: []
-            },
-            {
-                id: 1,
-                text: 'L\'espionnage n\'est jamais acceptable entre amis',
-                impactPlus: ['merkel'],
-                impactMoins: ['sarkozy', 'trump']
-            },
-            {
-                id: 2,
-                text: 'Je ne céderais rien aux fainéants',
-                impactPlus: ['macron'],
-                impactMoins: ['trump']
-            },
-            {
-                id: 3,
-                text: 'We are proud of you because you can be do what we want to do',
-                impactPlus: ['holland'],
-                impactMoins: ['trump']
-            }
-        ]
-    },
-    {
-        id: 5,
-        text: "Quelle phrase vous correspondrait le plus :",
-        responses: [
-            {
-                id: 0,
-                text: 'La population qui vieillit, vieillit de plus en plus vieux.',
-                impactPlus: ['sarkozy'],
-                impactMoins: []
-            },
-            {
-                id: 1,
-                text: 'L\'espionnage n\'est jamais acceptable entre amis',
-                impactPlus: ['merkel'],
-                impactMoins: ['sarkozy', 'trump']
-            },
-            {
-                id: 2,
-                text: 'Je ne céderais rien aux fainéants',
-                impactPlus: ['macron'],
-                impactMoins: ['trump']
-            },
-            {
-                id: 3,
-                text: 'We are proud of you because you can be do what we want to do',
-                impactPlus: ['holland'],
-                impactMoins: ['trump']
-            }
-        ]
-    },
-    {
-        id: 6,
         text: "Dans quelle pays souhaitez-vous vivre :",
         responses: [
             {
@@ -150,7 +120,7 @@ var questions = [
         ]
     },
     {
-        id: 7,
+        id: 5,
         text: "Quel écart d’âge seriez-vous prêt à accepter dans votre couple ?",
         responses: [
             {
@@ -174,7 +144,7 @@ var questions = [
         ]
     },
     {
-        id: 8,
+        id: 6,
         text: "Quel loisir, préférez-vous ?",
         responses: [
             {
@@ -204,7 +174,7 @@ var questions = [
         ]
     },
     {
-        id: 9,
+        id: 7,
         text: "Pour les photos vous êtes plutôt",
         responses: [
             {
@@ -228,7 +198,7 @@ var questions = [
         ]
     },
     {
-        id: 10,
+        id: 8,
         text: "Niveau alcool vous êtes :",
         responses: [
             {
@@ -252,7 +222,7 @@ var questions = [
         ]
     },
     {
-        id: 11,
+        id: 9,
         text: "Vous aimeriez avoir :",
         responses: [
             {
