@@ -67,8 +67,7 @@ window.onload = function() {
                         presidentsNames = ["macron", "trump", "hollande", "merkel", "sarkozy"],
                         bestPresident = presidentsNames[presidents.indexOf(maxpresident)];
                         console.log(bestPresident);
-                        alert("macron:" + macron + " trump:" + trump + " hollande:" + hollande + " merkel:" + merkel + " sarkozy:" + sarkozy + "\n" +
-                        "Votre président chéri : " + bestPresident);
+                        alert("Le président qui vous correspond est : " + bestPresident);
                 } else {
                     this.questionIndex++;
                     next_question = questions[this.questionIndex];

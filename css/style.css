@@ -6,15 +6,14 @@ body{
   font-family: 'Source Sans Pro';
   max-width: 800px;
   margin: auto;
-  background-color: #efefef;
+  background-color: #F3E5E7;
   font-size: 1.3em;
 }
 h1{
-  text-transform: uppercase;
-  padding-bottom: 1.8em;
-  color: #393939;
+  padding-bottom: 1.2em;
+  color: #240F67;
   font-family: 'Playfair Display';
-  font-size: 2em;
+  font-size: 2.5em;
 }
 ul{
   list-style: none;
@@ -34,7 +33,7 @@ label {
   margin-top: 10px;
 }
 label:hover {
-	background-color:#ffc704;
+	background-color:#D75438;
   border-radius: 10px;
 }label:active {
 	position:relative;
@@ -44,14 +43,15 @@ label:hover {
   width: 90%;
 }
 .callout{
-  background-color: #fff;
+  background-color: #F3E5E7;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
   border: 4px;
   border-style: solid;
-  border-color: #ffc704;
+  border-color: #D75438;
+  border-radius: 10px;
 }
 .response_radio{
   color: none;

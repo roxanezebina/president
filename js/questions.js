@@ -97,7 +97,7 @@ var questions = [
     },
     {
         id: 4,
-        text: "Dans quelle pays souhaitez-vous vivre :",
+        text: "Dans quelle pays souhaitez-vous vivre ?",
         responses: [
             {
                 id: 0,
@@ -190,7 +190,7 @@ var questions = [
                 impactMoins: ['sarkozy', 'macron', 'merkel', 'hollande']
             },
             {
-                id: 3,
+                id: 2,
                 text: 'naturel(e)',
                 impactPlus: ['merkel', 'hollande'],
                 impactMoins: ['trump']
@@ -214,7 +214,7 @@ var questions = [
                 impactMoins: ['macron', 'merkel', 'hollande']
             },
             {
-                id: 3,
+                id: 2,
                 text: 'Vin',
                 impactPlus: ['macron', 'hollande', 'sarkozy'],
                 impactMoins: ['merkel', 'trump']
@@ -238,7 +238,7 @@ var questions = [
                 impactMoins: ['macron', 'merkel']
             },
             {
-                id: 3,
+                id: 2,
                 text: 'Grande famille',
                 impactPlus: ['trump'],
                 impactMoins: ['merkel', 'macron']
